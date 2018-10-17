@@ -20,6 +20,8 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
-Route::get('/menu', function () {
-    return view('pages.menu');
+Route::post('/contact',function(){
+$data=request()->all();
+dd($data);
+
 });
